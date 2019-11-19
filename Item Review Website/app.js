@@ -17,6 +17,9 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, 'public')))
 
+
+
+
 app.get('/', (req, res) => {
     res.status(200).render('index')
 })
@@ -24,6 +27,20 @@ app.get('/', (req, res) => {
 app.get('/login', (req, res) => {
     res.status(200).render('login')
 })
+
+app.get('/contact', (req, res) => {
+    res.status(200).render('contact')
+})
+
+app.get('/cellphone', (req, res) => {
+    res.status(200).render('cellphone')
+})
+
+app.get('/camera', (req, res) => {
+    res.status(200).render('camera')
+})
+
+
 
 app.post('/login', (req, res) => {
     let userid = req.body.userid

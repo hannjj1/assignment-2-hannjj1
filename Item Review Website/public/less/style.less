@@ -1,24 +1,56 @@
+//LESS Styling
+@Orange: rgb(255, 162, 23);
+@Cream: rgb(255, 222, 112);
+@Gold: rgb(231, 201, 67);
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
+    padding: 0px;
     font-family: 'Oswald', sans-serif;
-    background-color: rgb(255, 222, 112);
+    background-color: @Cream;
 }
 
-header {
-    background-color: rgb(255, 162, 23);
+header { //Header Partial
+    background-color: @Orange;
     color: #fff;
     text-align: center;
     padding: 20px;
 }
 
+footer { //Footer Partial
+    background-color: @Orange;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+fieldset { //Contact Page
+	float: right;
+    width: 100%;
+    background-color: @Gold;
+}
+
+
+
+
 nav {
     display: flex;
     background-color: rgb(255, 199, 94);
 }
+
+
+
+
+
+
+
+
+
 
 nav a {
     color: #000;
@@ -46,6 +78,35 @@ nav .submenu {
     display: block;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -53,18 +114,18 @@ nav .submenu {
 
 aside {
     flex: 15%;
-    background-color: rgb(231, 201, 67);
+    background-color: @Gold;
     padding: 20px;
 }
 
 section {
     flex: 70%;
-    background-color: rgb(255, 222, 112);
+    background-color: @Cream;
     padding: 20px;
 }
 
 .placeholder {
-    background-color: rgb(231, 201, 67);
+    background-color: @Gold;
     width: 100%;
     padding: 0px;
 }
@@ -81,18 +142,6 @@ section {
     padding: 10px;
 }
 
-footer {
-    padding: 20px;
-    text-align: center;
-    color: white;
-    background-color: rgb(231, 201, 67);
-}
-
-fieldset {
-	float: right;
-    width: 100%;
-    background-color: rgb(255, 199, 94);
-}
 
 @media screen and (max-midth: 700px) {
     .row,
