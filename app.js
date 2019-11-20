@@ -43,6 +43,10 @@ app.get('/camera', (req, res) => {
 app.use(
     function(req, res){
     res.status(404).render('error')
+
+app.use((req, res) => {
+    res.status(404).render('error')
+})
 })*/
 
 
