@@ -1,5 +1,5 @@
-<%- include partials/nav.ejs %>
 <%- include partials/header.ejs %>
+<%- include partials/nav.ejs %>
 <div class="row">
     <aside>
         <h2>About Jacob</h2>
@@ -14,7 +14,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut lacinia odio. Cras at lorem pharetra, pharetra justo eget, fermentum dui. Proin vulputate elit a imperdiet hendrerit. Donec venenatis libero quis risus rhoncus gravida. Mauris ut justo vel odio aliquet auctor vitae tristique turpis. Curabitur pulvinar tempus risus non tincidunt. </p>
         <h2>Heading 2</h2>
         <div class="placeholder main"></div>
-        <form action="item1.html" method="POST">
+        <form><!--action="contact" method="POST"-->
             <fieldset>
                 <label for="username"><strong>Username:</strong></label>
                 <input type="text" name="username" id="" placeholder="Username" required>
@@ -22,11 +22,12 @@
                 <label for="message"><strong>Message:</strong></label>
                 <input type="text" name="message" id="" placeholder="Message" required>
                 <br>
-                <input value="Submit" type="submit">
+                <input value="Submit" id="button" type="submit">
             </fieldset>
         </form>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut lacinia odio. Cras at lorem pharetra, pharetra justo eget, fermentum dui. Proin vulputate elit a imperdiet hendrerit. Donec venenatis libero quis risus rhoncus gravida. Mauris ut justo vel odio aliquet auctor vitae tristique turpis. Curabitur pulvinar tempus risus non tincidunt. </p>
     </section>
 </div>
+<script src="/js/main.js"></script>
 <%- include partials/footer.ejs %>
     

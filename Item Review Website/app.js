@@ -19,13 +19,12 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 
 
-
 app.get('/', (req, res) => {
-    res.status(200).render('index')
+    res.status(200).render('login')
 })
 
-app.get('/login', (req, res) => {
-    res.status(200).render('login')
+app.get('/home', (req, res) => {
+    res.status(200).render('home')
 })
 
 app.get('/contact', (req, res) => {
@@ -40,16 +39,21 @@ app.get('/camera', (req, res) => {
     res.status(200).render('camera')
 })
 
+/*
+app.use(
+    function(req, res){
+    res.status(404).render('error')
+})*/
 
 
-app.post('/login', (req, res) => {
+app.post('/home', (req, res) => {
     let userid = req.body.userid
     let pwd = req.body.pwd
-    if (userid === "admin" && pwd === "admin"){
-        res.status(200).render('index')
+    if (userid === "user" && pwd === "P@ssw0rd123"){
+        res.status(200).render('home')
     }
     else
-        res.status(200).redirect('/login')
+        res.status(200).redirect('/')
 })
 
 // Listening to port 3000
