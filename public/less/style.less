@@ -4,149 +4,109 @@
 @Gold: rgb(231, 201, 67);
 @BannerHover: rgb(255, 182, 47);
 
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Oswald', sans-serif;
-    background-color: @Cream;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Oswald", sans-serif;
+  background-color: @Cream;
 }
 
-header { //Header Partial
-    background-color: @Orange;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+header {
+  //Header Partial
+  background-color: @Orange;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-footer { //Footer Partial
-    background-color: @Orange;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+footer {
+  //Footer Partial
+  background-color: @Orange;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-fieldset { //Contact Page
-	float: right;
-    width: 100%;
-    background-color: @Gold;
+fieldset {
+  //Contact Page
+  float: right;
+  width: 100%;
+  background-color: @Gold;
 }
-
-
-
 
 nav {
-    display: flex;
-    background-color: rgb(255, 199, 94);
+  display: flex;
+  background-color: rgb(255, 199, 94);
 }
 
-
-
-
-
-
-
-
-
-
 nav a {
-    color: #000;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
 }
 
 nav a:hover {
-    background-color: @BannerHover;
+  background-color: @BannerHover;
 }
 
 nav .submenu {
-    color: #000;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .submenu .menuoptions a {
-    color: #000;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 aside {
-    flex: 15%;
-    background-color: @Gold;
-    padding: 20px;
+  flex: 15%;
+  background-color: @Gold;
+  padding: 20px;
 }
 
 section {
-    flex: 70%;
-    background-color: @Cream;
-    padding: 20px;
+  flex: 70%;
+  background-color: @Cream;
+  padding: 20px;
 }
 
 .placeholder {
-    background-color: @Gold;
-    width: 100%;
-    padding: 0px;
+  background-color: @Gold;
+  width: 100%;
+  padding: 0px;
 }
 
 .main {
-    height: 200px;
+  height: 150px;
 }
 
 .sub {
-    height: 75px;
+  height: 75px;
 }
 
 .placeholder img {
-    padding: 10px;
+  padding: 10px;
 }
 
-
 @media screen and (max-midth: 700px) {
-    .row,
-    nav {
-        flex-direction: column;
-    }
+  .row,
+  nav {
+    flex-direction: column;
+  }
 }
